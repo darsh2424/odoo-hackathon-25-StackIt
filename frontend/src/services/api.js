@@ -18,6 +18,8 @@ export default {
   getQuestions: (params) => api.get('/questions', { params }),
   createQuestion: (data) => api.post('/questions', data),
   getQuestion: (id) => api.get(`/questions/${id}`),
+  getAnswers: (questionId) => api.get(`/questions/${questionId}/answers`),
+  acceptAnswer: (questionId, answerId) => api.patch(`/questions/${questionId}/accept/${answerId}`),
 
   // Answers
   createAnswer: (questionId, data) => api.post(`/questions/${questionId}/answers`, data),

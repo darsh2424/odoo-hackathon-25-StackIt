@@ -12,7 +12,7 @@ export default function Layout({ children }) {
       <Flex as="header" p={4} bg="white" boxShadow="sm" align="center">
         <Heading size="md">
           <ChakraLink as={RouterLink} to="/">
-            StackClone
+            StackIt
           </ChakraLink>
         </Heading>
         <Spacer />
